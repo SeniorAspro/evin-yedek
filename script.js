@@ -35,10 +35,23 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    const player = document.getElementById('music');
-    player.currentTime = localStorage.getItem('musicTime') || 0;
 
-    setInterval(() => {
-      localStorage.setItem('musicTime', player.currentTime);
-    }, 1000);
+    // For Carousel, mute skipped carousel videos
+    const evinCarousel = document.getElementById("evinCarousel");
+    evinCarousel.addEventListener("slid.bs.carousel", function () {
+      // stop previous 'from' slide's video
+      // Get all videos inside the carousel
+      const videos = evinCarousel.querySelectorAll("video");
+
+      videos.forEach((video) => {
+        if (!video.closest(".carousel-item").classList.contains("active")) {
+          video.pause();         // Pause non-active videos
+          // video.currentTime = 0; // (optional) rewind to start
+          video.muted = true;    // Mute non-active videos
+        } else {
+          video.muted = false;   // (optional) unmute active video
+          video.play();      // (optional) auto-play current one
+        }
+      });
+    });
   });
