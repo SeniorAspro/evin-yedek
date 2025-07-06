@@ -16,7 +16,7 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="background-overlay"></div>
+        <div class="background-overlay" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));"></div>
 
             <section class="top-section">  <!-- Top Section -->
 
@@ -38,50 +38,56 @@
             </section>
 
             
-
+    
     <div class="center-wrapper">
-        <div id="evinCarousel" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
+        <div class="carousel-wrapper">
+            <div id="evinCarousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
 
-                
-                <div class="carousel-item active">
-                    <video class="d-block w-100" controls muted>
-                        <source src="/photos/video3sec.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>   
-                </div>
-                
-                <div class="carousel-item ">
-                    <video class="d-block w-100" controls muted>
-                        <source src="photos/instagram/videos/yuruyus.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>   
-                </div>
-                
-                <div class="carousel-item ">
-                    <video class="d-block w-100" controls muted>
-                        <source src="photos/instagram/videos/xioxio.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>   
-                </div>
-                
-                <div class="carousel-item ">
-                    <video class="d-block w-100" controls muted>
-                        <source src="photos/instagram/videos/tostcu.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>   
-                </div>
-                
+                    <div class="carousel-item active">
+                        <video class="d-block w-100" controls muted>
+                            <source src="/photos/video3sec.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>   
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <video class="d-block w-100" controls muted>
+                            <source src="photos/instagram/videos/yuruyus.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>   
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <video class="d-block w-100" controls muted>
+                            <source src="photos/instagram/videos/xioxio.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>   
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <video class="d-block w-100" controls muted>
+                            <source src="photos/instagram/videos/tostcu.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>   
+                    </div>
+                    
 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#evinCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#evinCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#evinCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#evinCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
+
+            <div class="carousel-button-wrapper">
+                <button class="carousel-buttons" id="mute-toggle">Mute</button>
+                <button class="carousel-buttons" id="autoplay-toggle">Autoplay</button>
+            </div>
         </div>
     </div>
 

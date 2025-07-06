@@ -344,3 +344,22 @@
   border-bottom-left-radius: 0;
   right: -100px;
 }
+
+.carousel-button-wrapper {
+  background-color: rgba(206, 178, 223, 0.1);
+  justify-content: flex-start; 
+  display: flex; gap: 12px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  padding-left: 16px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.carousel-buttons {
+  border-radius: 20px;
+  background-color: #00fff75c;
+}
+.carousel-buttons:hover {
+  background-color: #00fff790;
+}
